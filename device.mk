@@ -25,14 +25,11 @@ PRODUCT_COPY_FILES := \
 	$(DEVICE_PATH)/configs/permissions/privapp-permissions-whitelist-product.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/privapp-permissions-whitelist-product.xml \
 	$(DEVICE_PATH)/configs/permissions/privapp-permissions-whitelist-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-whitelist-system.xml
 
-# GCam
-PRODUCT_PACKAGES += \
-    GoogleCameraGo
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
 	$(DEVICE_PATH)/overlay \
 	$(DEVICE_PATH)/overlay-lineage
+       $(DEVICE_PATH)/overlay-xd
 
 # Dependencies of kpoc_charger
 PRODUCT_PACKAGES += \
@@ -99,7 +96,7 @@ PRODUCT_PACKAGES += \
 
 # Symbols
 PRODUCT_PACKAGES += \
-    libshim_showlogo
+    libshim_showlogo \
     libshim_vtservice
 
 # Face Unlock
