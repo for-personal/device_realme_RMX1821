@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+    <privapp-permissions package="com.android.systemui">
+        <permission name="android.permission.WRITE_APN_SETTINGS"/>
+        <permission name="android.permission.CHANGE_CONFIGURATION"/>
+        <permission name="android.permission.PREVENT_POWER_KEY"/>
+        <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS"/>
+        <permission name="lineageos.permission.MANAGE_LIVEDISPLAY"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.settings">
+        <permission name="lineageos.permission.MANAGE_LIVEDISPLAY"/>
+    </privapp-permissions>
+</permissions>

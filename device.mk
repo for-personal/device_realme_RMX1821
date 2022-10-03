@@ -23,16 +23,13 @@ PRODUCT_COPY_FILES := \
 	$(DEVICE_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml \
 	$(DEVICE_PATH)/configs/permissions/privapp-permissions-whitelist-com.android.launcher3.xml:$(TARGET_COPY_OUT_SYSTEM)/system_ext/etc/permissions/privapp-permissions-whitelist-com.android.launcher3.xml \
 	$(DEVICE_PATH)/configs/permissions/privapp-permissions-whitelist-product.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/privapp-permissions-whitelist-product.xml \
-	$(DEVICE_PATH)/configs/permissions/privapp-permissions-whitelist-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-whitelist-system.xml
-
-# GCam
-PRODUCT_PACKAGES += \
-    GoogleCameraGo
+	$(DEVICE_PATH)/configs/permissions/privapp-permissions-whitelist-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-whitelist-system.xml \
+        $(DEVICE_PATH)/configs/permissions/missing-permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/missing-permissions.xml
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
 	$(DEVICE_PATH)/overlay \
-	$(DEVICE_PATH)/overlay-lineage
+	$(DEVICE_PATH)/overlay-lineage 
 
 # Dependencies of kpoc_charger
 PRODUCT_PACKAGES += \
@@ -99,7 +96,7 @@ PRODUCT_PACKAGES += \
 
 # Symbols
 PRODUCT_PACKAGES += \
-    libshim_showlogo
+    libshim_showlogo \
     libshim_vtservice
 
 # Face Unlock
