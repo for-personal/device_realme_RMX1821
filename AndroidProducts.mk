@@ -17,9 +17,9 @@
 DEVICE_PATH := device/realme/RMX1821
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_RMX1821.mk 
+    $(LOCAL_DIR)/lineage_RMX1821.mk 
 
 COMMON_LUNCH_CHOICES := \
-    spark_RMX1821-user \
-    spark_RMX1821-userdebug \
-    spark_RMX1821-eng
+    lineage_RMX1821-user \
+    lineage_RMX1821-userdebug \
+    lineage_RMX1821-eng

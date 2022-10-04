@@ -19,16 +19,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit common ArrowOS configurations
-$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-TARGET_BOOT_ANIMATION_RES := 720
+# flag 
+RICE_MAINTAINER := Zeus
+RICE_CHIPSET := MT6771
+SUSHI_BOOTANIMATION := 720
+TARGET_ENABLE_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Inherit from Realme RMX1821
 $(call inherit-product, device/realme/RMX1821/device.mk)
 
-PRODUCT_NAME := spark_RMX1821
+PRODUCT_NAME := lineage_RMX1821
 PRODUCT_DEVICE := RMX1821
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_BRAND := Realme
